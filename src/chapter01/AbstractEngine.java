@@ -28,7 +28,7 @@ public abstract class AbstractEngine implements Engine {
     
     public String toString() {
         return getClass().getSimpleName() +
-                " (" + size + ")";
+                " (" + size + "cc)";
     }
     
 }
