@@ -15,6 +15,7 @@ public interface Vehicle {
     
     public Engine getEngine();
     public Vehicle.Colour getColour();
+    public Lights.Type getLights();
     public void paint(Vehicle.Colour colour);
     
 }
