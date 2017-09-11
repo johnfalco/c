@@ -12,14 +12,20 @@ public abstract class AbstractVehicle implements Vehicle {
     
     private Engine engine;
     private Vehicle.Colour colour;
+    private Lights.Type type;
     
     public AbstractVehicle(Engine engine) {
-        this(engine, Vehicle.Colour.UNPAINTED);
+        this(engine, Vehicle.Colour.UNPAINTED, Lights.Type.UNLIT);
     }
     
     public AbstractVehicle(Engine engine, Vehicle.Colour colour) {
-        this.engine = engine;
-        this.colour = colour;
+        this(engine, colour, Lights.Type.UNLIT);
+    }
+    
+    public AbstractVehicle(Engine engine, Vehicle.Colour colour, Lights.Type type) {
+    	this.engine = engine;
+    	this.colour = colour;
+    	this.type = type;
     }
     
     public Engine getEngine() {
@@ -34,9 +40,13 @@ public abstract class AbstractVehicle implements Vehicle {
         this.colour = colour;
     }
     
+    public Lights.Type getLights() {
+    	return this.type;
+    }
+    
     public String toString() {
         return getClass().getSimpleName() +
-                " (" + engine + ", " + colour + ")";
+                " (" + engine + ", " + colour + ", " + type + ")";
     }
     
 }

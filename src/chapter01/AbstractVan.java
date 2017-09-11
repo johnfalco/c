@@ -15,7 +15,7 @@ public abstract class AbstractVan extends AbstractVehicle {
     }
     
     public AbstractVan(Engine engine, Vehicle.Colour colour) {
-        super(engine, colour);
+        super(engine, colour, Lights.Type.VANLIGHTS);
     }
     
 }
