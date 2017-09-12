@@ -27,11 +27,13 @@ public class Client {
         Body vehicleBody = factory.createBody();
         Chassis vehicleChassis = factory.createChassis();
         Windows vehicleWindows = factory.createWindows();
-        
+        Lights vehicleLights = factory.createLights();
+
         // Show what we've created...
         System.out.println(vehicleBody.getBodyParts());
         System.out.println(vehicleChassis.getChassisParts());
         System.out.println(vehicleWindows.getWindowParts());
+        System.out.println(vehicleLights.getLightsParts());
     }
     
 }

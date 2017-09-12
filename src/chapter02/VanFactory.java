@@ -22,4 +22,7 @@ public class VanFactory extends AbstractVehicleFactory {
         return new VanWindows();
     }
     
+    public Lights createLights() {
+    	return new VanLights();
+    }
 }

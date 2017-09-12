@@ -22,4 +22,8 @@ public class CarFactory extends AbstractVehicleFactory {
         return new CarWindows();
     }
     
+    public Lights createLights() {
+    	return new CarLights();
+    }
+    
 }
